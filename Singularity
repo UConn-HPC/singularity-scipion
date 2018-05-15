@@ -29,6 +29,7 @@ url=https://github.com/I2PC/scipion/releases/download/v1.2/scipion_v1.2_2018-04-
 tardir=scipion
 [ -f "$target" ] || [ -d "$tardir" ] || wget $url -O - | tar -xz
 cd scipion
+# Blank line + Enter agrees to provide anonymous usage data.
 ./scipion config <<EOF
 
 EOF
